@@ -1,1 +1,1 @@
-Select * FROM {{source('DW_Adventureworks','sales_personcreditcard')}})
+Select * FROM {{source('DW_Adventureworks','sales_personcreditcard')}}

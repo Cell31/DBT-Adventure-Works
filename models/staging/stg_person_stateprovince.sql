@@ -1,1 +1,1 @@
-Select * FROM {{source('DW_Adventureworks','person_stateprovince')}})
+Select * FROM {{source('DW_Adventureworks','person_stateprovince')}}

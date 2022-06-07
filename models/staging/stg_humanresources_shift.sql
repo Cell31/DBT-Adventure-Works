@@ -1,1 +1,1 @@
-Select * FROM {{source('DW_Adventureworks','humanresources_shift')}})
+Select * FROM {{source('DW_Adventureworks','humanresources_shift')}}

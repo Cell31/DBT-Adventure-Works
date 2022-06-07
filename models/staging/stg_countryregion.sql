@@ -1,1 +1,1 @@
-Select * FROM {{source('DW_Adventureworks','countryregion')}})
+Select * FROM {{source('DW_Adventureworks','countryregion')}}

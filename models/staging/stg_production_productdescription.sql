@@ -1,2 +1,2 @@
-Select * FROM {{source('DW_Adventureworks','production_productdescription')}})
+Select * FROM {{source('DW_Adventureworks','production_productdescription')}}
 
