@@ -1,2 +1,2 @@
+Select * FROM {{source('DW_Adventureworks','sales_salesterritory')}})
 
-sales_salesterritory
