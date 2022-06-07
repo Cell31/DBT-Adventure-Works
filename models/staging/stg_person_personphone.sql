@@ -1,2 +1,1 @@
-
-person_personphone
+Select * FROM {{source('DW_Adventureworks','person_personphone')}})

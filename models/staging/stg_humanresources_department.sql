@@ -1,1 +1,1 @@
-Select * FROM {{source('DW_Adventureworks','stg_product')}})
+Select * FROM {{source('DW_Adventureworks','humanresources_department')}})
