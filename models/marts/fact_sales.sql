@@ -9,7 +9,7 @@ with detail as (
    , sales as (
     select detail.salesorderid,
            detail.salesorderdetailid,
-           detail.carriertrackingnumber.
+           detail.carriertrackingnumber,
            detail.orderqty,
            detail.productid,
            detail.specialofferid
