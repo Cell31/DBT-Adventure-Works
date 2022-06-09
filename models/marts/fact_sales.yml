@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: sales
+  - name: fact_sales
     columns:
       - name: salesorderid,
       - name: salesorderdetailid,
