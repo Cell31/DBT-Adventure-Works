@@ -9,3 +9,5 @@ models:
       - name: orderqty
       - name: productid
       - name: specialofferid
+      - name: unitprice
+      - name: unitpricediscount

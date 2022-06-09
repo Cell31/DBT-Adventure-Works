@@ -12,7 +12,9 @@ with detail as (
            detail.carriertrackingnumber,
            detail.orderqty,
            detail.productid,
-           detail.specialofferid
+           detail.specialofferid,
+           detail.unitprice,
+           detail.unitpricediscount
     FROM detail
     left join header on
        detail.salesorderid = 
