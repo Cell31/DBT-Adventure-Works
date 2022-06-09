@@ -6,8 +6,4 @@ models:
       - name: salesorderid
       - name: salesorderdetailid
       - name: carriertrackingnumber
-      - name: orderqty
-      - name: productid
-      - name: specialofferid
-      - name: unitprice
-      - name: unitpricediscount
+
