@@ -3,35 +3,11 @@ version: 2
 models:
   - name: fact_sales
     columns:
-          - name: salesorderid
-          - name: salesorderdetailid
-          - name: carriertrackingnumber
-          - name: orderqty
-          - name: productid
-          - name: specialofferid
-          - name: unitprice
-          - name: unitpricediscount
-          - name: modifieddate
-          - name: revisionnumber
-          - name: orderdate
-          - name: duedate
-          - name: shipdate
-          - name: status
-          - name: onlineorderflag
-          - name: purchaseordernumber
-          - name: accountnumber
-          - name: customerid
-          - name: salespersonid
-          - name: territoryid
-          - name: billtoaddressid
-          - name: shiptoaddressid
-          - name: shipmethodid
-          - name: creditcardid
-          - name: creditcardapprovalcode
-          - name: currencyrateid
-          - name: subtotal
-          - name: taxamt
-          - name: freight
-          - name: totaldue
-          - name: comment
-          - name: rowguid
+      - name: salesorderid
+      - name: salesorderdetailid
+      - name: carriertrackingnumber
+      - name: orderqty
+      - name: productid
+      - name: specialofferid
+      - name: unitprice
+      - name: unitpricediscount

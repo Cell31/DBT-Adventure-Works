@@ -7,7 +7,14 @@ with detail as (
     from {{ref('stg_sales_salesorderheader')}}
 )
    , sales as (
-    select *
+    select salesorderid,
+           salesorderdetailid,
+           carriertrackingnumber,
+           orderqty,
+           productid,
+           specialofferid,
+           unitprice,
+           unitpricediscount 
     FROM detail
     left join header on
        detail.salesorderid = 
