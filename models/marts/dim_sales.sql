@@ -14,7 +14,7 @@ with detail as (
            header.orderdate,
            header.customerid
     FROM detail
-    left join detail on
+    left join header on
        detail.salesorderid = 
        header.salesorderid
 
