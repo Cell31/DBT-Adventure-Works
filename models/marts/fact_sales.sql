@@ -13,8 +13,7 @@ with detail as (
            detail.orderqty,
            detail.productid,
            detail.specialofferid,
-           detail.unitprice,
-           detail.unitpricediscount
+           detail.unitprice
     FROM detail
     left join header on
        detail.salesorderid = 
