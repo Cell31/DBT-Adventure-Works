@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: sales
+  columns:
+    - name: salesorderid,
+    - name: salesorderdetailid,
+    - name: orderqty,
+    - name: productid, 
+    - name: orderdate,
+    - name: customerid
