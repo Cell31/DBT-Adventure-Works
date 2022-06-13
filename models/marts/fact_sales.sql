@@ -19,6 +19,10 @@ with detail as (
        select * 
     from {{ref('stg_sales_personcreditcard')}}
 )
+   , salesreason as (
+       select * 
+    from {{ref('stg_sales_salesreason')}}
+)  
    , sales as (
     select detail.salesorderid,
            detail.salesorderdetailid,
@@ -30,7 +34,8 @@ with detail as (
            detail.unitprice,
            detail.unitpricediscount,
            creditcard.creditcardid,
-           reason.salesreasonid
+           reason.salesreasonid,
+           salesreason.name 
     FROM detail
     left join header on
        detail.salesorderid = 
@@ -44,7 +49,10 @@ with detail as (
     left join creditcard on 
         creditcard.creditcardid =
         header.creditcardid    
-        
+    left join salesreason
+        salesreason.salesreasonid =
+        reason.salesreason
+
 )
 
 select * from sales

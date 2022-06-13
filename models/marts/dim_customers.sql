@@ -17,8 +17,8 @@ with salescustomer as (
               person.lastname  
        from salescustomer
        left join person on
-        customers.personid = 
-        person.personid
+        salescustomer.personid = 
+        person.businessentityid
    ) 
 
 select * from customers
