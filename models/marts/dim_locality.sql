@@ -19,7 +19,8 @@ with personaddress as (
               stateprovince.stateprovinceid,
               stateprovince.stateprovincecode,
               stateprovince.countryregioncode,
-              stateprovince.name
+              stateprovince.name as provincename,
+              countryregion.name
        from personaddress
         left join stateprovince on 
             personaddress.stateprovinceid =
