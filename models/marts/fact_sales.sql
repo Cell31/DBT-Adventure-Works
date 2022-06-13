@@ -34,6 +34,7 @@ with detail as (
            detail.unitprice,
            detail.unitpricediscount,
            creditcard.creditcardid,
+           creditcard.cardtype,
            reason.salesreasonid as ID do motivo de vendas,
            salesreason.name as MotivoVenda
     FROM detail
