@@ -4,10 +4,12 @@ models:
   - name: fact_sales
     columns:
       - name: salesorderid
-      - name: salesorderdetailid
-      - name: carriertrackingnumber
+      - name: customerid
       - name: orderqty
       - name: productid
       - name: specialofferid
       - name: unitprice
       - name: unitpricediscount
+      - name: salesreasonid
+      - name: orderdate
+      - name: credtcardid

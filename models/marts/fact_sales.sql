@@ -22,13 +22,15 @@ with detail as (
    , sales as (
     select detail.salesorderid,
            detail.salesorderdetailid,
-           detail.carriertrackingnumber,
+           header.customerid,
+           header.orderdate,
            detail.orderqty,
            detail.productid,
            detail.specialofferid,
            detail.unitprice,
            detail.unitpricediscount,
-           creditcard.creditcardid
+           creditcard.creditcardid,
+           reason.salesreasonid
     FROM detail
     left join header on
        detail.salesorderid = 

@@ -11,8 +11,15 @@ with personaddress as (
     select *
     from {{ref('stg_countryregion')}}
 ) 
-   , address as (
-       select 
+   , locality as (
+       select personaddress.businessentityid,
+              personaddress.emailaddressid,
+              personaddress.emailaddress,
+              stateprovince.stateprovinceid,
+              stateprovince.stateprovincecode,
+              stateprovince.countryregioncode,
+              stateprovince.name,
+              countryregion.name
        from personaddress
         left join stateprovince on 
             personaddress.stateprovinceid =
@@ -21,4 +28,5 @@ with personaddress as (
             countryregion.countryregioncode = 
             stateprovince.countryregioncode
    ) 
-   
+
+select * from locality

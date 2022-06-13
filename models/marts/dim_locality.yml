@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: locality
+    columns:
+      - name: businessentityid
+      - name: emailaddressid
+      - name: emailaddress
+      - name: stateprovinceid
+      - name: stateprovincecode
+      - name: countryregioncode
+      - name: name
+      - name: name
+      
