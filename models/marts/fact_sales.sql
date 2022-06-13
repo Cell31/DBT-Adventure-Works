@@ -17,7 +17,7 @@ with detail as (
 )   
    , creditcard as (
        select * 
-    from {{ref('stg_sales_personcreditcard')}}
+    from {{ref('stg_sales_creditcard')}}
 )
    , salesreason as (
        select * 
