@@ -34,8 +34,8 @@ with detail as (
            detail.unitprice,
            detail.unitpricediscount,
            creditcard.creditcardid,
-           reason.salesreasonid,
-           salesreason.name 
+           reason.salesreasonid as ID do motivo de vendas,
+           salesreason.name as MotivoVenda
     FROM detail
     left join header on
        detail.salesorderid = 
