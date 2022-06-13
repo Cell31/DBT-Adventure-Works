@@ -12,9 +12,10 @@ with personaddress as (
     from {{ref('stg_countryregion')}}
 ) 
    , locality as (
-       select personaddress.businessentityid,
-              personaddress.emailaddressid,
-              personaddress.emailaddress,
+       select personaddress.addressid,
+              personaddress.addressline1,
+              personaddress.city,
+              personaddress.postalcode,
               stateprovince.stateprovinceid,
               stateprovince.stateprovincecode,
               stateprovince.countryregioncode,
