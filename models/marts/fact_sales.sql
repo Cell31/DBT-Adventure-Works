@@ -49,9 +49,9 @@ with detail as (
     left join creditcard on 
         creditcard.creditcardid =
         header.creditcardid    
-    left join salesreason
+    left join salesreason on
         salesreason.salesreasonid =
-        reason.salesreason
+        reason.salesreasonid
 
 )
 
