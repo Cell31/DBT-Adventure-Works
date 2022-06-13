@@ -310,3 +310,12 @@ sources:
           - name: demographics
           - name: rowguid
           - name: modifieddate
+
+      - name: person_businessentityaddress
+        columns: 
+          - name: businessentityid
+          - name: addressid
+          - name: addresstypeid
+
+
+          
