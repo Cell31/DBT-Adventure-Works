@@ -11,5 +11,4 @@ models:
       - name: stateprovincecode
       - name: countryregioncode
       - name: name
-      - name: name
       
