@@ -13,3 +13,4 @@ models:
       - name: salesreasonid
       - name: orderdate
       - name: credtcardid
+      - name: cardtype
