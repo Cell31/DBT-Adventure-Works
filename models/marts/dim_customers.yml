@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: customers
+    columns:
+      - name: customerid
+      - name: storeid
+      - name: territoryid
+      - name: businessentityid
+      - name: persontype
+      - name: firstname
+      - name: lastname

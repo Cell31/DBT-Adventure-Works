@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: locality
+    columns:
+      - name: addressid
+      - name: addressline1
+      - name: city
+      - name: postalcode
+      - name: stateprovinceid
+      - name: stateprovincecode
+      - name: countryregioncode
+      - name: name
+      - name: provincename
+      

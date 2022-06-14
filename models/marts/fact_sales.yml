@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fact_sales
+    columns:
+      - name: salesorderid
+      - name: customerid
+      - name: orderqty
+      - name: productid
+      - name: specialofferid
+      - name: unitprice
+      - name: unitpricediscount
+      - name: salesreasonid
+      - name: orderdate
+      - name: credtcardid
+      - name: cardtype
